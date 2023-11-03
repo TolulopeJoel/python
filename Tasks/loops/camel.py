@@ -14,3 +14,14 @@
 
 # OUTPUT:
 #     Ouputs/camel.png
+
+while True:
+    user_input = input('camel case: ')
+    snake_case = ''
+    
+    for char in user_input:
+        if char == char.upper():
+            snake_case += '_' + char.lower()
+        else:
+            snake_case += char
+    print(snake_case) 
